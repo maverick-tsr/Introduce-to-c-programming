@@ -1,9 +1,11 @@
 #include<stdio.h>
 int main()
 {
-    int x,y;
-    scanf("%d%d",&x,&y);
-    float avg=(float)(x+y)/2;
-    float *ptr=&avg;
-    printf("%f",*ptr);
+    int *ptr1, *ptr2,a,b;
+    ptr1=&a;
+    ptr2=&b;
+    scanf("%d%d",ptr1,ptr2);
+    float avg=(float)(*ptr1+*ptr2)/2;
+    printf("%.2f",avg);
+
 }
